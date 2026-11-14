@@ -307,7 +307,7 @@ void sortBySize(item items[], int count) {
 //10. Sort by importance
 void sortByImportance(item items[], int count) {
     sort(items, items + count, [](const item &a, const item &b) {
-        return a.level > b.level;
+        return a.level < b.level;
     });
 
     cout << "\nItems sorted by importance (highest to lowest):\n";
